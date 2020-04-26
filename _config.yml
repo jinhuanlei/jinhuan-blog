@@ -98,4 +98,4 @@ theme: Hexo-Theme-Life-master
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: 'landscape'
