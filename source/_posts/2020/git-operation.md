@@ -1,5 +1,5 @@
 ---
-title: git-operation
+title: Git Operation
 permalink: git-operation
 date: 2020-04-26 15:40:43
 tags: [git]
@@ -18,5 +18,22 @@ git commit -am 'Add some feature'
 
 # Set upstream(bind) with remote feature branch
 git push --set-upstream origin <remote-branch-name>
+```
+
+## Git Reset
+```bash 
+git reset <commit-hash>
+# specific file
+git reset <commit-hash> -- <file1> <file2>
+
+# will lose changes
+git reset --hard HEAD~1
+# keep changes
+git reset --soft 5029f0cc08cf
+```
+
+## Git Diff
+```bash 
+git apply changes.diff
 ```
 
