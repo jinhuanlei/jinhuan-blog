@@ -27,3 +27,15 @@ $ hexo new page "tags"
 ```
 tags: [tag1,tag2,tag3]
 ```
+
+*  Insert html element to the page
+``` 
+layout: false
+title: "个人简历"
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+...
+```
