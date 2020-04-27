@@ -7,6 +7,7 @@ categories: []
 ---
 Don't afraid to use Git! even break it!
 ## Git Operations
+### Git Basics
 ```bash
 git branch        check current branch
 
@@ -20,7 +21,7 @@ git commit -am 'Add some feature'
 git push --set-upstream origin <remote-branch-name>
 ```
 
-## Git Reset
+### Git Reset
 ```bash 
 git reset <commit-hash>
 # specific file
@@ -32,7 +33,7 @@ git reset --hard HEAD~1
 git reset --soft 5029f0cc08cf
 ```
 
-## Git Diff
+### Git Diff
 ```bash 
 git apply changes.diff
 ```
