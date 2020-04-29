@@ -22,11 +22,11 @@ git commit -am 'Add some feature'
 git push --set-upstream origin <remote-branch-name>
 ```
 
-### Git Reset
+### Git Reset & revert & checkout
 ```bash 
 git reset <commit-hash>
 # specific file
-git reset <commit-hash> -- <file1> <file2>
+git checkout <commit-hash> -- <file1> <file2>
 
 # will lose changes
 git reset --hard HEAD~1
