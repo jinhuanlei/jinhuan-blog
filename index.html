@@ -212,7 +212,7 @@
               </span>
               <span class="post-meta-item-text">Posted on</span>
 
-              <time title="Created: 2020-04-27 06:06:28" itemprop="dateCreated datePublished" datetime="2020-04-27T06:06:28+00:00">2020-04-27</time>
+              <time title="Created: 2020-04-29 04:29:05" itemprop="dateCreated datePublished" datetime="2020-04-29T04:29:05+00:00">2020-04-29</time>
             </span>
 
           
@@ -290,7 +290,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-27 06:06:28" itemprop="dateModified" datetime="2020-04-27T06:06:28+00:00">2020-04-27</time>
+                <time title="Modified: 2020-04-29 04:29:05" itemprop="dateModified" datetime="2020-04-29T04:29:05+00:00">2020-04-29</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -363,7 +363,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-04-27 06:06:28" itemprop="dateModified" datetime="2020-04-27T06:06:28+00:00">2020-04-27</time>
+                <time title="Modified: 2020-04-29 04:29:05" itemprop="dateModified" datetime="2020-04-29T04:29:05+00:00">2020-04-29</time>
               </span>
 
           
@@ -380,7 +380,7 @@
           <p>Don’t afraid to use Git! even break it!</p>
 <h2 id="Git-Operations"><a href="#Git-Operations" class="headerlink" title="Git Operations"></a>Git Operations</h2><h3 id="Git-Basics"><a href="#Git-Basics" class="headerlink" title="Git Basics"></a>Git Basics</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git branch        check current branch</span><br><span class="line"></span><br><span class="line">git stauts        check changes of current branch</span><br><span class="line"></span><br><span class="line">git checkout -b <span class="string">'my-new-feature'</span>            create a new branch and change to it</span><br><span class="line"></span><br><span class="line">git commit -am <span class="string">'Add some feature'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set upstream(bind) with remote feature branch</span></span><br><span class="line">git push --<span class="built_in">set</span>-upstream origin &lt;remote-branch-name&gt;</span><br></pre></td></tr></table></figure>
 
-<h3 id="Git-Reset"><a href="#Git-Reset" class="headerlink" title="Git Reset"></a>Git Reset</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit-hash&gt;</span><br><span class="line"><span class="comment"># specific file</span></span><br><span class="line">git reset &lt;commit-hash&gt; -- &lt;file1&gt; &lt;file2&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># will lose changes</span></span><br><span class="line">git reset --hard HEAD~1</span><br><span class="line"><span class="comment"># keep changes</span></span><br><span class="line">git reset --soft 5029f0cc08cf</span><br></pre></td></tr></table></figure>
+<h3 id="Git-Reset-amp-revert-amp-checkout"><a href="#Git-Reset-amp-revert-amp-checkout" class="headerlink" title="Git Reset &amp; revert &amp; checkout"></a>Git Reset &amp; revert &amp; checkout</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit-hash&gt;</span><br><span class="line"><span class="comment"># specific file</span></span><br><span class="line">git checkout &lt;commit-hash&gt; -- &lt;file1&gt; &lt;file2&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># will lose changes</span></span><br><span class="line">git reset --hard HEAD~1</span><br><span class="line"><span class="comment"># keep changes</span></span><br><span class="line">git reset --soft 5029f0cc08cf</span><br></pre></td></tr></table></figure>
 
 <h3 id="Git-Diff"><a href="#Git-Diff" class="headerlink" title="Git Diff"></a>Git Diff</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git apply changes.diff</span><br></pre></td></tr></table></figure>
 
