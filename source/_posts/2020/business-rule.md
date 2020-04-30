@@ -12,7 +12,7 @@ categories:
 * ARR(ANNUAL RECURRING REVENUE)
 Annual recurring revenue (ARR) is an essential SaaS business metric that shows how much recurring revenue you can expect, based on yearly subscriptions. ARR is also the annualized version of monthly recurring revenue (MRR) representing revenue in the calendar year.
 
-![](/jinhuan-blog/images/arr.png)
+<img src="/jinhuan-blog/images/arr.png" width="50%" height="50%">
 
 * YoY(Year-Over_year Growth)
 YoY = (This Year – Last Year) / Last Year
