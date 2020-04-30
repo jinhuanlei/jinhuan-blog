@@ -6,7 +6,8 @@
     <content><![CDATA[<h2 id="Business-rule"><a href="#Business-rule" class="headerlink" title="Business rule"></a>Business rule</h2><h3 id="Terms"><a href="#Terms" class="headerlink" title="Terms"></a>Terms</h3><ul>
 <li>ARR(ANNUAL RECURRING REVENUE)<br>Annual recurring revenue (ARR) is an essential SaaS business metric that shows how much recurring revenue you can expect, based on yearly subscriptions. ARR is also the annualized version of monthly recurring revenue (MRR) representing revenue in the calendar year.</li>
 </ul>
-<p><img src="/jinhuan-blog/images/arr.png" alt=""></p>
+<img src="/jinhuan-blog/images/arr.png" width="50%" height="50%">
+
 <ul>
 <li><p>YoY(Year-Over_year Growth)<br>YoY = (This Year – Last Year) / Last Year<br>YOY compares the previous year performance to the current year performance. </p>
 </li>
@@ -85,7 +86,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">layout: false</span><br><span class="line">title: &quot;个人简历&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>insert an image</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 设置宽度为200px并设置居中（高度会自动缩放）</span><br><span class="line">&lt;div style&#x3D;&quot;width: 200px; margin: auto&quot;&gt; ![](&#x2F;jinhuan-blog&#x2F;images&#x2F;arr.png)</span><br><span class="line"></span><br><span class="line">![](网络图片地址)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># 设置宽度为200px并设置居中（高度会自动缩放）</span><br><span class="line">![](&#x2F;jinhuan-blog&#x2F;images&#x2F;arr.png)</span><br><span class="line">![](网络图片地址)</span><br><span class="line"></span><br><span class="line"># or use html</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;jinhuan-blog&#x2F;images&#x2F;arr.png&quot; width&#x3D;&quot;50%&quot; height&#x3D;&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 ]]></content>
