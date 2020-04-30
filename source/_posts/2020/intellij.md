@@ -2,8 +2,8 @@
 title: intellij
 permalink: intellij
 date: 2020-04-30 14:38:18
-tags: intellij
-categories: others
+tags: Intellij
+categories: Others
 ---
 
 ## Intellij/WebStorm/RubyMine related info

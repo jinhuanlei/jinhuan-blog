@@ -2,8 +2,8 @@
 title: React and State
 permalink: react-state
 date: 2020-04-26 16:42:35
-tags: react
-categories: react
+tags: React
+categories: React
 ---
 
 ## React and State

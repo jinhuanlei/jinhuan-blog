@@ -2,7 +2,7 @@
 title: Business rule
 permalink: business-rule
 date: 2020-04-30 16:11:36
-tags: business
+tags: Business
 categories:
 ---
 

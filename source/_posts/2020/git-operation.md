@@ -2,7 +2,7 @@
 title: Git Operation
 permalink: git-operation
 date: 2020-04-26 15:40:43
-tags: [git]
+tags: [Git]
 categories: []
 ---
 Don't afraid to use Git! even break it!
