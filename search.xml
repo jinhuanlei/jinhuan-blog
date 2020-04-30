@@ -16,7 +16,7 @@
 </ul>
 ]]></content>
       <tags>
-        <tag>business</tag>
+        <tag>Business</tag>
       </tags>
   </entry>
   <entry>
@@ -31,7 +31,7 @@
 
 ]]></content>
       <tags>
-        <tag>git</tag>
+        <tag>Git</tag>
       </tags>
   </entry>
   <entry>
@@ -45,10 +45,10 @@
 
 ]]></content>
       <categories>
-        <category>others</category>
+        <category>Others</category>
       </categories>
       <tags>
-        <tag>intellij</tag>
+        <tag>Intellij</tag>
       </tags>
   </entry>
   <entry>
@@ -63,10 +63,10 @@
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">    <span class="comment">// a good place to define react state</span></span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.state = &#123;<span class="attr">lat</span>: <span class="literal">null</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">window</span>.navigator.geolocation.getCurrentPosition(</span><br><span class="line">      position =&gt; &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(position);</span><br><span class="line">        <span class="comment">// must use setstate to modify state</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">lat</span>: position.coords.latitude&#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">      err =&gt; <span class="built_in">console</span>.log(err)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// React says we have to define render</span></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Latitude: &#123;this.state.lat&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;App/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">"#root"</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
 ]]></content>
       <categories>
-        <category>react</category>
+        <category>React</category>
       </categories>
       <tags>
-        <tag>react</tag>
+        <tag>React</tag>
       </tags>
   </entry>
   <entry>
