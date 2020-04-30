@@ -16,12 +16,39 @@
       </tags>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/jinhuan-blog/test/</url>
-    <content><![CDATA[]]></content>
+    <title>intellij</title>
+    <url>/jinhuan-blog/intellij/</url>
+    <content><![CDATA[<h2 id="Intellij-WebStorm-RubyMine-related-info"><a href="#Intellij-WebStorm-RubyMine-related-info" class="headerlink" title="Intellij/WebStorm/RubyMine related info"></a>Intellij/WebStorm/RubyMine related info</h2><h3 id="File-masks-filter"><a href="#File-masks-filter" class="headerlink" title="File masks / filter"></a>File masks / filter</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># test ruby file</span><br><span class="line">*spec.rb</span><br><span class="line"></span><br><span class="line"># non-test ruby file</span><br><span class="line">!*spec.rb,*.rb</span><br><span class="line"></span><br><span class="line">React JS File (not Amber, not test)</span><br><span class="line">!*spec.js,!*module.js,*.js</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
       <categories>
-        <category>test</category>
+        <category>others</category>
       </categories>
+      <tags>
+        <tag>intellij</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>React and State</title>
+    <url>/jinhuan-blog/react-state/</url>
+    <content><![CDATA[<h2 id="React-and-State"><a href="#React-and-State" class="headerlink" title="React and State"></a>React and State</h2><h3 id="Class-Component"><a href="#Class-Component" class="headerlink" title="Class Component"></a>Class Component</h3><ul>
+<li><p>Define state<br><code>this.state = {lat: null};</code></p>
+</li>
+<li><p>Update state<br><code>this.setState({lat: position.coords.latitude});</code><br>Note: state is immutable, we should <strong>never edit the object directly</strong>, like <code>this.state.lat = 1</code></p>
+</li>
+</ul>
+<figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">    <span class="comment">// a good place to define react state</span></span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.state = &#123;<span class="attr">lat</span>: <span class="literal">null</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">window</span>.navigator.geolocation.getCurrentPosition(</span><br><span class="line">      position =&gt; &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(position);</span><br><span class="line">        <span class="comment">// must use setstate to modify state</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">lat</span>: position.coords.latitude&#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">      err =&gt; <span class="built_in">console</span>.log(err)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// React says we have to define render</span></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Latitude: &#123;this.state.lat&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;App/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">"#root"</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>react</category>
+      </categories>
+      <tags>
+        <tag>react</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hexo User Manual</title>
