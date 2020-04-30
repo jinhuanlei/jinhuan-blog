@@ -20,7 +20,17 @@ More info: [Writing](https://hexo.io/docs/writing.html)
 ``` bash
 $ hexo new page "tags"
 ```
+### How to upgrade
+```bash 
+# 查看当前版本
+$ hexo version
 
+# 执行升级命令
+$ npm update
+
+# 查看升级后版本
+$ hexo version
+```
 ### Syntax
 
 * Set multiple tags for a blog
