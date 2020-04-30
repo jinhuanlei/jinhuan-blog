@@ -49,3 +49,11 @@ title: "个人简历"
 <head>
 ...
 ```
+
+* insert an image
+``` 
+# 设置宽度为200px并设置居中（高度会自动缩放）
+<div style="width: 200px; margin: auto"> ![](/jinhuan-blog/images/arr.png)
+
+![](网络图片地址)
+```
