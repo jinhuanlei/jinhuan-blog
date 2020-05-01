@@ -21,28 +21,36 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/jinhuan-blog/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Jinhuan&#39;s Blogggg">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="1.什么是线程基本概念 我们先从线程的基本概念开始，给大家复习一下，不知道有多少同学是基础不太好，说什么是线程都不知道的，如果这样的话，花时间去补初级内容的课。  什么是叫一个进程？ 什么叫一个线程？   Program app -&gt;QQ.exe 进程：做一个简单的解释，你的硬盘上有一个简单的程序，这个程序叫QQ.exe，这是一个程序，这个程序是一个静态的概念，它被扔在硬盘上也没人理他，但是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="multi-thread">
+<meta property="og:url" content="http://yoursite.com/multi-thread/index.html">
 <meta property="og:site_name" content="Jinhuan&#39;s Blogggg">
+<meta property="og:description" content="1.什么是线程基本概念 我们先从线程的基本概念开始，给大家复习一下，不知道有多少同学是基础不太好，说什么是线程都不知道的，如果这样的话，花时间去补初级内容的课。  什么是叫一个进程？ 什么叫一个线程？   Program app -&gt;QQ.exe 进程：做一个简单的解释，你的硬盘上有一个简单的程序，这个程序叫QQ.exe，这是一个程序，这个程序是一个静态的概念，它被扔在硬盘上也没人理他，但是">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/jinhuan-blog/images/multi-thread/01_02.jpg">
+<meta property="og:image" content="http://yoursite.com/jinhuan-blog/images/multi-thread/01_04.jpg">
+<meta property="article:published_time" content="2020-04-30T21:12:02.000Z">
+<meta property="article:modified_time" content="2020-05-01T02:27:59.752Z">
 <meta property="article:author" content="Jinhuan L.">
+<meta property="article:tag" content="Multithread">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/jinhuan-blog/images/multi-thread/01_02.jpg">
 
-<link rel="canonical" href="http://yoursite.com/">
+<link rel="canonical" href="http://yoursite.com/multi-thread/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Jinhuan's Blogggg</title>
+  <title>multi-thread | Jinhuan's Blogggg</title>
   
 
 
@@ -183,83 +191,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/Hexo-User-Manual/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jinhuan-blog/images/avatar.gif">
-      <meta itemprop="name" content="Jinhuan L.">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jinhuan's Blogggg">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/Hexo-User-Manual/" class="post-title-link" itemprop="url">Hexo User Manual</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-05-01 02:27:59" itemprop="dateCreated datePublished" datetime="2020-05-01T02:27:59+00:00">2020-05-01</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Create-a-page"><a href="#Create-a-page" class="headerlink" title="Create a page"></a>Create a page</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page <span class="string">"tags"</span></span><br></pre></td></tr></table></figure>
-<h3 id="How-to-upgrade"><a href="#How-to-upgrade" class="headerlink" title="How to upgrade"></a>How to upgrade</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看当前版本</span></span><br><span class="line">$ hexo version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 执行升级命令</span></span><br><span class="line">$ npm update</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看升级后版本</span></span><br><span class="line">$ hexo version</span><br></pre></td></tr></table></figure>
-<h3 id="Syntax"><a href="#Syntax" class="headerlink" title="Syntax"></a>Syntax</h3><ul>
-<li><p>Set multiple tags for a blog</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tags: [tag1,tag2,tag3]</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Insert html element to the page</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">layout: false</span><br><span class="line">title: &quot;个人简历&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang&#x3D;&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>insert an image</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 设置宽度为200px并设置居中（高度会自动缩放）</span><br><span class="line">![](&#x2F;jinhuan-blog&#x2F;images&#x2F;arr.png)</span><br><span class="line">![](网络图片地址)</span><br><span class="line"></span><br><span class="line"># or use html</span><br><span class="line">&lt;img src&#x3D;&quot;&#x2F;jinhuan-blog&#x2F;images&#x2F;arr.png&quot; width&#x3D;&quot;50%&quot; height&#x3D;&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
@@ -275,10 +210,9 @@
       <meta itemprop="name" content="Jinhuan's Blogggg">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/multi-thread/" class="post-title-link" itemprop="url">multi-thread</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          multi-thread
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -317,7 +251,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="1-什么是线程"><a href="#1-什么是线程" class="headerlink" title="1.什么是线程"></a>1.什么是线程</h2><p><strong>基本概念</strong></p>
+        <h2 id="1-什么是线程"><a href="#1-什么是线程" class="headerlink" title="1.什么是线程"></a>1.什么是线程</h2><p><strong>基本概念</strong></p>
 <p>我们先从线程的基本概念开始，给大家复习一下，不知道有多少同学是基础不太好，说什么是线程都不知道的，如果这样的话，花时间去补初级内容的课。</p>
 <p><img src="/jinhuan-blog/images/multi-thread/01_02.jpg" alt="01_02"></p>
 <p>什么是叫一个进程？ 什么叫一个线程？ </p>
@@ -401,326 +335,36 @@
 
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/jinhuan-blog/tags/Multithread/" rel="tag"># Multithread</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/business-rule/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jinhuan-blog/images/avatar.gif">
-      <meta itemprop="name" content="Jinhuan L.">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jinhuan's Blogggg">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/business-rule/" class="post-title-link" itemprop="url">Business rule</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-30 16:11:36" itemprop="dateCreated datePublished" datetime="2020-04-30T16:11:36+00:00">2020-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-01 02:27:59" itemprop="dateModified" datetime="2020-05-01T02:27:59+00:00">2020-05-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Business-rule"><a href="#Business-rule" class="headerlink" title="Business rule"></a>Business rule</h2><h3 id="Terms"><a href="#Terms" class="headerlink" title="Terms"></a>Terms</h3><ul>
-<li>ARR(ANNUAL RECURRING REVENUE)<br>Annual recurring revenue (ARR) is an essential SaaS business metric that shows how much recurring revenue you can expect, based on yearly subscriptions. ARR is also the annualized version of monthly recurring revenue (MRR) representing revenue in the calendar year.</li>
-</ul>
-<img src="/jinhuan-blog/images/business-rule/arr.png" width="50%" height="50%">
-
-<ul>
-<li><p>YoY(Year-Over_year Growth)<br>YoY = (This Year – Last Year) / Last Year<br>YOY compares the previous year performance to the current year performance. </p>
-</li>
-<li><p>YTD(Year to Date)<br>YTD is a measurement of performance from Jan 1 to either today or end of last reporting period.</p>
-</li>
-</ul>
-
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/jinhuan-blog/business-rule/" rel="prev" title="Business rule">
+      <i class="fa fa-chevron-left"></i> Business rule
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/jinhuan-blog/Hexo-User-Manual/" rel="next" title="Hexo User Manual">
+      Hexo User Manual <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/intellij/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jinhuan-blog/images/avatar.gif">
-      <meta itemprop="name" content="Jinhuan L.">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jinhuan's Blogggg">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/intellij/" class="post-title-link" itemprop="url">intellij</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-30 14:38:18" itemprop="dateCreated datePublished" datetime="2020-04-30T14:38:18+00:00">2020-04-30</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-01 02:27:59" itemprop="dateModified" datetime="2020-05-01T02:27:59+00:00">2020-05-01</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/jinhuan-blog/categories/Others/" itemprop="url" rel="index"><span itemprop="name">Others</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="Intellij-WebStorm-RubyMine-related-info"><a href="#Intellij-WebStorm-RubyMine-related-info" class="headerlink" title="Intellij/WebStorm/RubyMine related info"></a>Intellij/WebStorm/RubyMine related info</h2><h3 id="File-masks-filter"><a href="#File-masks-filter" class="headerlink" title="File masks / filter"></a>File masks / filter</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># test ruby file</span><br><span class="line">*spec.rb</span><br><span class="line"></span><br><span class="line"># non-test ruby file</span><br><span class="line">!*spec.rb,*.rb</span><br><span class="line"></span><br><span class="line">React JS File (not Amber, not test)</span><br><span class="line">!*spec.js,!*module.js,*.js</span><br></pre></td></tr></table></figure>
-
-
-
-
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/react-state/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jinhuan-blog/images/avatar.gif">
-      <meta itemprop="name" content="Jinhuan L.">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jinhuan's Blogggg">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/react-state/" class="post-title-link" itemprop="url">React and State</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-26 16:42:35" itemprop="dateCreated datePublished" datetime="2020-04-26T16:42:35+00:00">2020-04-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-01 02:27:59" itemprop="dateModified" datetime="2020-05-01T02:27:59+00:00">2020-05-01</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/jinhuan-blog/categories/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="React-and-State"><a href="#React-and-State" class="headerlink" title="React and State"></a>React and State</h2><h3 id="Class-Component"><a href="#Class-Component" class="headerlink" title="Class Component"></a>Class Component</h3><ul>
-<li><p>Define state<br><code>this.state = {lat: null};</code></p>
-</li>
-<li><p>Update state<br><code>this.setState({lat: position.coords.latitude});</code><br>Note: state is immutable, we should <strong>never edit the object directly</strong>, like <code>this.state.lat = 1</code></p>
-</li>
-</ul>
-<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">    <span class="comment">// a good place to define react state</span></span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.state = &#123;<span class="attr">lat</span>: <span class="literal">null</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">window</span>.navigator.geolocation.getCurrentPosition(</span><br><span class="line">      position =&gt; &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(position);</span><br><span class="line">        <span class="comment">// must use setstate to modify state</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">lat</span>: position.coords.latitude&#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">      err =&gt; <span class="built_in">console</span>.log(err)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// React says we have to define render</span></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Latitude: &#123;this.state.lat&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;App/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">"#root"</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/git-operation/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/jinhuan-blog/images/avatar.gif">
-      <meta itemprop="name" content="Jinhuan L.">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jinhuan's Blogggg">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/jinhuan-blog/git-operation/" class="post-title-link" itemprop="url">Git Operation</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">Posted on</span>
-
-              <time title="Created: 2020-04-26 15:40:43" itemprop="dateCreated datePublished" datetime="2020-04-26T15:40:43+00:00">2020-04-26</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-01 02:27:59" itemprop="dateModified" datetime="2020-05-01T02:27:59+00:00">2020-05-01</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Don’t afraid to use Git! even break it!</p>
-<h2 id="Git-Operations"><a href="#Git-Operations" class="headerlink" title="Git Operations"></a>Git Operations</h2><h3 id="Git-Basics"><a href="#Git-Basics" class="headerlink" title="Git Basics"></a>Git Basics</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">git branch        check current branch</span><br><span class="line"></span><br><span class="line">git stauts        check changes of current branch</span><br><span class="line"></span><br><span class="line">git checkout -b <span class="string">'my-new-feature'</span>            create a new branch and change to it</span><br><span class="line"></span><br><span class="line">git commit -am <span class="string">'Add some feature'</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Set upstream(bind) with remote feature branch</span></span><br><span class="line">git push --<span class="built_in">set</span>-upstream origin &lt;remote-branch-name&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Git-Reset-amp-revert-amp-checkout"><a href="#Git-Reset-amp-revert-amp-checkout" class="headerlink" title="Git Reset &amp; revert &amp; checkout"></a>Git Reset &amp; revert &amp; checkout</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit-hash&gt;</span><br><span class="line"><span class="comment"># specific file</span></span><br><span class="line">git checkout &lt;commit-hash&gt; -- &lt;file1&gt; &lt;file2&gt;</span><br><span class="line"></span><br><span class="line"><span class="comment"># will lose changes</span></span><br><span class="line">git reset --hard HEAD~1</span><br><span class="line"><span class="comment"># keep changes</span></span><br><span class="line">git reset --soft 5029f0cc08cf</span><br></pre></td></tr></table></figure>
-
-<h3 id="Git-Diff"><a href="#Git-Diff" class="headerlink" title="Git Diff"></a>Git Diff</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git apply changes.diff</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -773,6 +417,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是线程"><span class="nav-number">1.</span> <span class="nav-text">1.什么是线程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-线程常用方法"><span class="nav-number">2.</span> <span class="nav-text">2.线程常用方法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-启动线程的五种方式"><span class="nav-number">3.</span> <span class="nav-text">3.启动线程的五种方式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-线程同步的基本概念"><span class="nav-number">4.</span> <span class="nav-text">4.线程同步的基本概念</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
