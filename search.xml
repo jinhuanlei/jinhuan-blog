@@ -39,10 +39,23 @@
     <url>/jinhuan-blog/intellij/</url>
     <content><![CDATA[<h2 id="Intellij-WebStorm-RubyMine-related-info"><a href="#Intellij-WebStorm-RubyMine-related-info" class="headerlink" title="Intellij/WebStorm/RubyMine related info"></a>Intellij/WebStorm/RubyMine related info</h2><h3 id="File-masks-filter"><a href="#File-masks-filter" class="headerlink" title="File masks / filter"></a>File masks / filter</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line"># test ruby file</span><br><span class="line">*spec.rb</span><br><span class="line"></span><br><span class="line"># non-test ruby file</span><br><span class="line">!*spec.rb,*.rb</span><br><span class="line"></span><br><span class="line">React JS File (not Amber, not test)</span><br><span class="line">!*spec.js,!*module.js,*.js</span><br></pre></td></tr></table></figure>
 
-
-
-
-
+<h3 id="shortcuts"><a href="#shortcuts" class="headerlink" title="shortcuts"></a>shortcuts</h3><h4 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h4><ul>
+<li>git pull: <code>Command + T</code></li>
+<li>git push: <code>Command + K</code></li>
+<li>git push: <code>Command + Shift + K</code></li>
+<li>Git history: right click line number =&gt; click <code>annotation</code></li>
+</ul>
+<h4 id="Views"><a href="#Views" class="headerlink" title="Views"></a>Views</h4><ul>
+<li>Change view mode: <code>Control + ~</code></li>
+<li>Change Zen mode: <code>Control + ~</code> then double press 4</li>
+</ul>
+<h4 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h4><ul>
+<li>折叠代码: <code>Command + -</code></li>
+<li>扩展代码: <code>Command + &#39;+&#39;</code></li>
+<li>recent files: <code>Command + E</code></li>
+<li>recent changed place: <code>Conmand + Shift + E</code></li>
+<li>代码片段： <code>ctrl + j</code></li>
+</ul>
 ]]></content>
       <categories>
         <category>Others</category>
