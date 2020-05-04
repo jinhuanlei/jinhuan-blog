@@ -1,12 +1,12 @@
 ---
-title: React and State
-permalink: react-state
+title: React101
+permalink: react101
 date: 2020-04-26 16:42:35
 tags: React
 categories: React
 ---
 
-## React and State
+## React
 
 ### Class Component
 * Define state
@@ -49,3 +49,16 @@ ReactDOM.render(
   document.querySelector("#root")
 );
 ```
+
+#### simple way
+```jsx 
+class App extends React.Component {
+  state = {lat: null, errMessage: ''};
+}
+```
+
+
+### Component Lifecycle
+render() will be called many times.  For example,  render() will be called right before the componentDidUpdate()
+<img src="/jinhuan-blog/images/react/ComponentLifecycle.png" width="50%" height="50%">
+<img src="/jinhuan-blog/images/react/ComponentLifecycle2.png" width="50%" height="50%">
