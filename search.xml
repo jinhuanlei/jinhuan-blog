@@ -65,15 +65,20 @@
       </tags>
   </entry>
   <entry>
-    <title>React and State</title>
-    <url>/jinhuan-blog/react-state/</url>
-    <content><![CDATA[<h2 id="React-and-State"><a href="#React-and-State" class="headerlink" title="React and State"></a>React and State</h2><h3 id="Class-Component"><a href="#Class-Component" class="headerlink" title="Class Component"></a>Class Component</h3><ul>
+    <title>React101</title>
+    <url>/jinhuan-blog/react101/</url>
+    <content><![CDATA[<h2 id="React"><a href="#React" class="headerlink" title="React"></a>React</h2><h3 id="Class-Component"><a href="#Class-Component" class="headerlink" title="Class Component"></a>Class Component</h3><ul>
 <li><p>Define state<br><code>this.state = {lat: null};</code></p>
 </li>
 <li><p>Update state<br><code>this.setState({lat: position.coords.latitude});</code><br>Note: state is immutable, we should <strong>never edit the object directly</strong>, like <code>this.state.lat = 1</code></p>
 </li>
 </ul>
 <figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span>;</span><br><span class="line"><span class="keyword">import</span> ReactDOM <span class="keyword">from</span> <span class="string">'react-dom'</span>;</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">    <span class="comment">// a good place to define react state</span></span><br><span class="line">    <span class="keyword">super</span>(props);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">this</span>.state = &#123;<span class="attr">lat</span>: <span class="literal">null</span>&#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">window</span>.navigator.geolocation.getCurrentPosition(</span><br><span class="line">      position =&gt; &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(position);</span><br><span class="line">        <span class="comment">// must use setstate to modify state</span></span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;<span class="attr">lat</span>: position.coords.latitude&#125;);</span><br><span class="line">      &#125;,</span><br><span class="line">      err =&gt; <span class="built_in">console</span>.log(err)</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// React says we have to define render</span></span><br><span class="line">  render() &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="xml"><span class="tag">&lt;<span class="name">div</span>&gt;</span>Latitude: &#123;this.state.lat&#125;<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">  &lt;App/&gt;,</span><br><span class="line">  <span class="built_in">document</span>.querySelector(<span class="string">"#root"</span>)</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h4 id="simple-way"><a href="#simple-way" class="headerlink" title="simple way"></a>simple way</h4><figure class="highlight jsx"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">App</span> <span class="keyword">extends</span> <span class="title">React</span>.<span class="title">Component</span> </span>&#123;</span><br><span class="line">  state = &#123;<span class="attr">lat</span>: <span class="literal">null</span>, <span class="attr">errMessage</span>: <span class="string">''</span>&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="Component-Lifecycle"><a href="#Component-Lifecycle" class="headerlink" title="Component Lifecycle"></a>Component Lifecycle</h3><p>render() will be called many times.  For example,  render() will be called right before the componentDidUpdate()<br><img src="/jinhuan-blog/images/react/ComponentLifecycle.png" width="50%" height="50%"><br><img src="/jinhuan-blog/images/react/ComponentLifecycle2.png" width="50%" height="50%"></p>
 ]]></content>
       <categories>
         <category>React</category>
