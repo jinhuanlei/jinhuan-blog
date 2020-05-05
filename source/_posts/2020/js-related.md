@@ -7,7 +7,7 @@ categories: Javascript
 ---
 
 ### Js Related
-1. disable inspect(development tools), right click
+1. Disable inspect(development tools), right click
  看别人博客 想白嫖一下人家代码 发现人家博客禁用了inspect :( , Google了一下自己写了一个Demo
 ```html 
 <body oncontextmenu="return false;">
