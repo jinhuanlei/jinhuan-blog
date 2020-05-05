@@ -8,7 +8,7 @@ categories: Javascript
 
 ### Js Related
 1. disable inspect(development tools), right click
- 看别人博客 想白嫖一下人家代码 发现人家博客禁用了inspect :(, Google了一下自己写了一个Demo
+ 看别人博客 想白嫖一下人家代码 发现人家博客禁用了inspect :( , Google了一下自己写了一个Demo
 ```html 
 <body oncontextmenu="return false;">
 </body>
@@ -20,7 +20,6 @@ categories: Javascript
     if(event.keyCode === 123) {
       return false;
     }
-    console.log(e.key);
     if((e.ctrlKey || e.altKey) && (e.shiftKey || e.metaKey) && e.keyCode === 'I'.charCodeAt(0)) {
       return false;
     }
