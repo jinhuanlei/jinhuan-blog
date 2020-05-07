@@ -40,22 +40,22 @@ categories: Javascript
 和java不一样， 通过java的思维 truck.driveMyTruck 只是调用了car里面的sound 结果应该是vroom。 但是js里面， 会认为this指的是truck，结果就变成
 `putputput`。
 ```javascript
-class Car{
-	setDriveSound(sound){
-		this.sound = sound;
-	}
-	
-	drive(){
-		return this.sound;
-	}
+class Car {
+  setDriveSound(sound) {
+    this.sound = sound;
+  }
+
+  drive() {
+    return this.sound;
+  }
 }
 
 const car = new Car();
 car.setDriveSound('vroom');
 
 const truck = {
-	sound: 'putputput',
-	driveMyTruck: car.drive
+  sound: 'putputput',
+  driveMyTruck: car.drive
 }
 
 // 1
@@ -68,17 +68,18 @@ console.log(drive());
 
 Add the constructor to bind this， to make the logic to work
 ```javascript
-class Car{
-	constructor(){
-		this.drive = this.drive.bind(this);
-	}
-	setDriveSound(sound){
-		this.sound = sound;
-	}
-	
-	drive(){
-		return this.sound;
-	}
+class Car {
+  constructor() {
+    this.drive = this.drive.bind(this);
+  }
+
+  setDriveSound(sound) {
+    this.sound = sound;
+  }
+
+  drive() {
+    return this.sound;
+  }
 }
 ```
 
