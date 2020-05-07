@@ -220,7 +220,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -243,12 +243,16 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="Js-Related"><a href="#Js-Related" class="headerlink" title="Js Related"></a>Js Related</h3><ol>
-<li>Disable inspect(development tools), right click<br>看别人博客 想白嫖一下人家代码 发现人家博客禁用了inspect :( , Google了一下自己写了一个Demo<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">oncontextmenu</span>=<span class="string">"return false;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// windows:  e.ctrlKey &amp;&amp; e.shiftKey &amp;&amp; e.keyCode === 'I'.charCodeAt(0)</span><br><span class="line">// mac: e.altKey &amp;&amp; e.metaKey &amp;&amp; e.keyCode === 'I'.charCodeAt(0)</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span></span><br><span class="line">    if(event.keyCode === 123) &#123;</span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'I'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'C'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'J'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'U'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+          <h3 id="Js-Related"><a href="#Js-Related" class="headerlink" title="Js Related"></a>Js Related</h3><h4 id="Disable-inspect-development-tools-right-click"><a href="#Disable-inspect-development-tools-right-click" class="headerlink" title="Disable inspect(development tools), right click"></a>Disable inspect(development tools), right click</h4><p> 看别人博客 想白嫖一下人家代码 发现人家博客禁用了inspect :( , Google了一下自己写了一个Demo</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span> <span class="attr">oncontextmenu</span>=<span class="string">"return false;"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// windows:  e.ctrlKey &amp;&amp; e.shiftKey &amp;&amp; e.keyCode === 'I'.charCodeAt(0)</span><br><span class="line">// mac: e.altKey &amp;&amp; e.metaKey &amp;&amp; e.keyCode === 'I'.charCodeAt(0)</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">"text/javascript"</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="built_in">document</span>.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span></span><br><span class="line">    if(event.keyCode === 123) &#123;</span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'I'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'C'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'J'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="actionscript">    <span class="keyword">if</span>((e.ctrlKey || e.altKey) &amp;&amp; (e.shiftKey || e.metaKey) &amp;&amp; e.keyCode === <span class="string">'U'</span>.charCodeAt(<span class="number">0</span>)) &#123;</span></span><br><span class="line"><span class="actionscript">      <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="this"><a href="#this" class="headerlink" title="this"></a>this</h4><p>和java不一样， 通过java的思维 truck.driveMyTruck 只是调用了car里面的sound 结果应该是vroom。 但是js里面， 会认为this指的是truck，结果就变成<br><code>putputput</code>。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span></span>&#123;</span><br><span class="line">	setDriveSound(sound)&#123;</span><br><span class="line">		<span class="keyword">this</span>.sound = sound;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	drive()&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">this</span>.sound;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> car = <span class="keyword">new</span> Car();</span><br><span class="line">car.setDriveSound(<span class="string">'vroom'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> truck = &#123;</span><br><span class="line">	sound: <span class="string">'putputput'</span>,</span><br><span class="line">	driveMyTruck: car.drive</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 1</span></span><br><span class="line"><span class="built_in">console</span>.log(truck.driveMyTruck);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> drive = car.drive;</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="built_in">console</span>.log(drive());</span><br></pre></td></tr></table></figure>
+
+<p>Add the constructor to bind this， to make the logic to work</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span></span>&#123;</span><br><span class="line">	<span class="keyword">constructor</span>()&#123;</span><br><span class="line">		<span class="keyword">this</span>.drive = <span class="keyword">this</span>.drive.bind(<span class="keyword">this</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	setDriveSound(sound)&#123;</span><br><span class="line">		<span class="keyword">this</span>.sound = sound;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	drive()&#123;</span><br><span class="line">		<span class="keyword">return</span> <span class="keyword">this</span>.sound;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-</li>
-</ol>
 
       
     </div>
@@ -299,7 +303,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -455,7 +459,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
 
           
@@ -530,7 +534,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -622,7 +626,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -707,7 +711,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -797,7 +801,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-05-05 03:55:35" itemprop="dateModified" datetime="2020-05-05T03:55:35+00:00">2020-05-05</time>
+                <time title="Modified: 2020-05-07 05:24:37" itemprop="dateModified" datetime="2020-05-07T05:24:37+00:00">2020-05-07</time>
               </span>
 
           
