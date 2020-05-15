@@ -62,3 +62,6 @@ class App extends React.Component {
 render() will be called many times.  For example,  render() will be called right before the componentDidUpdate()
 <img src="/jinhuan-blog/images/react/ComponentLifecycle.png" width="50%" height="50%">
 <img src="/jinhuan-blog/images/react/ComponentLifecycle2.png" width="50%" height="50%">
+
+### Redux cycle
+<img src="/jinhuan-blog/images/react/ReduxCycle.png" width="50%" height="50%">

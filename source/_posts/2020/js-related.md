@@ -83,4 +83,47 @@ class Car {
 }
 ```
 
+#### Axio
+ways for async requests
+```javascript
+ async onSearchSubmit(term) {
+    const response = await axios.get('https://api.unsplash.com/search/photos', {
+      params: {
+        query: term
+      },
+      headers: {
+        Authorization: 'Client-ID DSoo4hrs3G1mzY1BkyycAZkBT3LXLmpzc3TOI16z3-E'
+      }
+    });
+    console.log(response.data.results);
+  }
+```
+
+```javascript
+  onSearchSubmit(term) {
+    axios.get('https://api.unsplash.com/search/photos', {
+      params: {
+        query: term
+      },
+      headers: {
+        Authorization: 'Client-ID DSoo4hrs3G1mzY1BkyycAZkBT3LXLmpzc3TOI16z3-E'
+      }
+    }).then(r => console.log(r));
+  }
+```
+
+```javascript
+onSearchSubmit = async (term) => {
+    const response = await axios.get('https://api.unsplash.com/search/photos', {
+      params: {
+        query: term
+      },
+      headers: {
+        Authorization: 'Client-ID DSoo4hrs3G1mzY1BkyycAZkBT3LXLmpzc3TOI16z3-E'
+      }
+    });
+    this.setState({images: response.data.results});
+  }
+```
+
 
